@@ -39,7 +39,6 @@
           },
           "outerAxis": {
             "data": "value",
-            "maxValue": 120,
             "percentRadius": 100,
             "ranges": [
               {
@@ -49,13 +48,13 @@
                 "width": 8
               },
               {
-                "color": "#35FD2D",
+                "color": "#FF3A53",
                 "end": 105,
                 "start": 80,
                 "width": 12
               },
               {
-                "color": "#7A6BD5",
+                "color": "#CA3A3A",
                 "end": 120,
                 "start": 105,
                 "width": 16
@@ -63,6 +62,9 @@
             ],
             "show": true,
             "width": 1
+          },
+          "style": {
+            "backgroundColor": "#EDFFAA"
           }
         },
         "type": "ia.chart.gauge"
