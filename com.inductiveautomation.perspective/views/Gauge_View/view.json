@@ -28,6 +28,7 @@
           }
         },
         "props": {
+          "animate": true,
           "backgroundColor": "",
           "innerAxis": {
             "data": "secondaryValue",
@@ -48,7 +49,7 @@
                 "width": 8
               },
               {
-                "color": "#6E94D7",
+                "color": "#35FD2D",
                 "end": 105,
                 "start": 80,
                 "width": 12
