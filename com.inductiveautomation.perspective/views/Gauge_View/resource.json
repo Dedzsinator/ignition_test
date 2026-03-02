@@ -1,0 +1,17 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "view.json",
+    "thumbnail.png"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "degi.nandor@gmail.com",
+      "timestamp": "2026-03-02T14:08:41Z"
+    },
+    "lastModificationSignature": "6e9bbe5950a96ee9a9fb3bf70b64cd45cef6a6e107fb8f0973ce85b906439045"
+  }
+}

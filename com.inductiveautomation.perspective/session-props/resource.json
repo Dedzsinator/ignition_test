@@ -1,0 +1,16 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "props.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "degi.nandor@gmail.com",
+      "timestamp": "2026-03-02T13:41:03Z"
+    },
+    "lastModificationSignature": "93bf9f032288436d29d5e0df396a9abde5b81956e065604ef59d2c9eb3a0e4ae"
+  }
+}

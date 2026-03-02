@@ -1,0 +1,16 @@
+{
+  "scope": "C",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "degi.nandor@gmail.com",
+      "timestamp": "2026-03-02T13:38:28Z"
+    },
+    "lastModificationSignature": "ef2573f8ee34dce83c7c3db8ab08d25dad57dbea6ea3da783ec158a8ba2e7f00"
+  }
+}

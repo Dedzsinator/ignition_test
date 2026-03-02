@@ -1,0 +1,10 @@
+{
+  "pages": {
+    "/gauge_view": {
+      "viewPath": "Gauge_View"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom"
+  }
+}

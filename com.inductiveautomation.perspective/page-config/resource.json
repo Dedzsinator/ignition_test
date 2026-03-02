@@ -1,0 +1,16 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "config.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "degi.nandor@gmail.com",
+      "timestamp": "2026-03-02T13:39:00Z"
+    },
+    "lastModificationSignature": "9c8995b5c8a35a4e2b0f6faa5f2308699edc4c96216ba8562a537a19e2941b1a"
+  }
+}
