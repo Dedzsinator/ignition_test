@@ -1,0 +1,51 @@
+# ==========================================
+# Ignition Specific
+# ==========================================
+# Ignore Designer autosave folders and temporary lock files
+.autosave/
+*.lock
+
+# Ignore Ignition backup files (if you accidentally drop them here)
+*.gwbk
+*.proj
+
+# ==========================================
+# Custom Repo Utilities
+# ==========================================
+# Ignore our custom batch sync scripts folder
+util/
+
+# ==========================================
+# OS Generated Junk
+# ==========================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# ==========================================
+# IDE and Editor Files
+# ==========================================
+# If you use VS Code or Notepad++ to edit Python scripts
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+*.tmp
