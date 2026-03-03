@@ -61,12 +61,24 @@ Priviți acest istoric real generat de comanda `git log --oneline --graph`:
 
 ## Convenții pentru Numele Branch-urilor (Best Practices)
 
-Pentru a lucra eficient în echipă și a înțelege imediat ce face fiecare ramură, folosim următoarele prefixe standard:
+Pentru a lucra eficient în echipă și a menține proiectul Ignition stabil, folosim două categorii de branch-uri: ramuri permanente (pentru medii) și ramuri temporare (pentru lucru).
 
-- **`feat/`** -> Pentru funcționalități și ecrane noi (ex: `feat/adaugare-pompe-apa`).
-- **`fix/`** -> Pentru repararea erorilor sau bug-urilor (ex: `fix/eroare-script-motor`).
-- **`docs/`** -> Pentru actualizări de documentație (ex: `docs/update-readme`).
-- **`test/`** -> Pentru teste experimentale.
+### 1. Branchuri Permanente (Mediile de rulare)
+Aceste ramuri reflectă gateway-urile fizice de Ignition și nu sunt șterse niciodată:
+* **`prod`** (sau `master` / `main`) -> Codul de PRODUCȚIE. Reprezintă exact ce rulează pe utilajele din fabrică. Nimeni nu scrie cod direct aici. Codul ajunge aici doar prin PR din `dev`.
+* **`dev`** (sau `develop`) -> Codul de DEZVOLTARE / TESTARE. Toată munca nouă este integrată și testată prima dată aici, înainte de a fi promovată în `prod`.
+
+
+
+### 2. Branchuri Temporare (De lucru)
+Când începi o sarcină nouă, creezi un branch nou din `dev`, folosind unul din următoarele prefixe:
+* **`feat/`** -> Pentru funcționalități și ecrane noi (ex: `feat/adaugare-pompe-apa`).
+* **`fix/`** -> Pentru repararea erorilor sau bug-urilor (ex: `fix/eroare-script-motor`).
+* **`chore/`** -> Pentru mentenanță, curățenie în cod sau modificări de configurare care nu adaugă funcționalități noi pentru utilizator (ex: `chore/stergere-ferestre-nefolosite`).
+* **`docs/`** -> Pentru actualizări de documentație (ex: `docs/update-readme`).
+* **`test/`** -> Pentru teste experimentale pe care nu intenționezi să le duci pe producție.
+
+**Fluxul standard este:** Creezi `feat/pompa` din `dev` -> Lucrezi -> Faci PR înapoi în `dev` -> La final de săptămână/sprint, faci PR din `dev` în `prod`.
 
 ---
 
@@ -135,7 +147,7 @@ git checkout feat/alarme
 git rebase master
 ```
 
-**Regula de Aur: NICIODATĂ nu faceți rebase pe un branch public (ex: `master`). Rebase rescrie istoria! Folosiți-l doar pe branch-urile voastre locale.**
+**Regula de Aur**: NICIODATĂ nu faceți rebase pe un branch public (ex: `master`). Rebase rescrie istoria! Folosiți-l doar pe branch-urile voastre locale.
 
 ## Butoanele de Panică (Cum repari când ai stricat ceva)
 
